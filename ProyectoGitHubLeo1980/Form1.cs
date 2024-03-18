@@ -16,5 +16,12 @@ namespace ProyectoGitHubLeo1980
         {
             InitializeComponent();
         }
+        Func<int, int, int> PrecioConGastos = (costo, gastos) => costo + gastos;
+
+        private int EstablecerPrecioFinal(int pCostos, int pGastos, Func<int, int, int> f)
+        {
+            f = PrecioConGastos;
+            return f(pCostos, pGastos);
+        }
     }
 }
