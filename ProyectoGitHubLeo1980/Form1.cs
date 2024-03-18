@@ -21,6 +21,7 @@ namespace ProyectoGitHubLeo1980
         private int EstablecerPrecioFinal(int pCostos, int pGastos, Func<int, int, int> f)
         {
             f = PrecioConGastos;
+            MessageBox.Show("Cambio y actualizacones en GitHub");
             return f(pCostos, pGastos);
         }
     }
